@@ -1,0 +1,18 @@
+.zy compression
+czy   = 16488 / 11712
+czy.c = 3838  / 3678
+dzy   = 16600 / 11779
+dzy.c = 1962  / 1886
+
+.gz compression
+czy   = 16488 / 3218
+czy.c = 3838  / 1527
+dzy   = 16600 / 3250
+dzy.c = 1962  / 829
+
+.gz is the clear winner
+Worth noting that .zy compression worked better on the compiled
+files than the code files. I imagine this is because our
+method works better the more identical bytes there are
+close to one another, in the c files this case does not
+happen as often.
